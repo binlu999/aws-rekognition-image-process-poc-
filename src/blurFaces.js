@@ -26,7 +26,7 @@ const blurFaces = async (Bucket, Key, faceDetails) => {
             const left = box.Left * dimensions.width
             const top = box.Top * dimensions.height
 
-            img.region(width, height, left, top).blur(5, 70)
+            img.region(width, height, left, top).blur(8, 70)
             //img.region(width, height, left, top).blur(0, 70)
         })
 
